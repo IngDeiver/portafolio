@@ -1,0 +1,1 @@
+export default  " all ease .5s"
