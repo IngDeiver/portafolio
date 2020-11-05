@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 //Styled buttons
 import ThemeToggler from '../../styled/components/themeTogglerBtn'
-import {GithubIcon, LinkedinIcon} from '../../styled/components/socialIcons'
+import SocialIcons from '../../styled/components/socialIcons'
 import Nav from '../../styled/components/navContainer'
 import {Links, Linkitem} from '../../styled/components/navLinkElements'
 import DownloadCvBtn from '../../styled/components/downloadCvBtn'
@@ -64,8 +64,7 @@ const Header = () => {
       {/* Buttons rigth */}
       <div className="d-flex flex-row justify-content-around">
           <ThemeToggler/>
-          <LinkedinIcon/> 
-          <GithubIcon/>
+          <SocialIcons lg={true}/>
           <DownloadCvBtn download href="/Hoja de vida.docx">Descargar CV</DownloadCvBtn>
       </div>
 

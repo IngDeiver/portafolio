@@ -4,7 +4,8 @@ export  const theme = {
             background:"#F5F6FA",
             linkItemColor:"#707070",
             iconColor:"#18191A",
-            activeColor:"#000000"
+            activeColor:"#000000",
+            bodyBgColor:"#FFFFFF"
            
         }
     },
@@ -12,10 +13,10 @@ export  const theme = {
     dark:{
        colors: {
             background:"#000000",
-            bgLight:"#18191A",
             linkItemColor:"#FFFFFF",
             iconColor:"#FFFFFF",
-            activeColor:"#ffffff"
+            activeColor:"#ffffff",
+            bodyBgColor:"#18191A"
        }
     }
 }

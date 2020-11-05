@@ -5,7 +5,6 @@ import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import Container from '../styled/components/container'
 import GlobalStyle from '../styled/globalStyled'
-// import AppContext from '../context/appContext'
 
 const Layout = ({ children }) => {
   
@@ -14,11 +13,13 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle/>
       <ThemeProvider>
-        <Header/>
-          <Container>
-            {children}
-          </Container>
-        <Footer/>
+        <Container>
+            <Header/>
+            <main  className="container">
+                {children}
+            </main>
+            <Footer/>
+        </Container>
       </ThemeProvider>
     </>
   )
