@@ -6,8 +6,10 @@ import Footer from '../components/footer/footer'
 import Container from '../styled/components/container'
 import GlobalStyle from '../styled/globalStyled'
 
+
+// Es la estrutura que siempre tendra mi portafolio
 const Layout = ({ children }) => {
-  
+
 
   return (
     <>
@@ -16,6 +18,7 @@ const Layout = ({ children }) => {
         <Container>
             <Header/>
             <main  className="container">
+                {/* Es el contenido que cambia dependiendo del path */}
                 {children}
             </main>
             <Footer/>

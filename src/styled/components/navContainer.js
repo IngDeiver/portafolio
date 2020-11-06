@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import transitionColor from '../transitions/colorTransition'
 
-// styled components
+// Es el contenedor de la barra de navegación con todos sus estilos
 const navHorizontalPadding = "40px";
 export default styled.nav`
   background-color:${props => props.theme.colors.background};

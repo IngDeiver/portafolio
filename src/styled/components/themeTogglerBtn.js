@@ -2,10 +2,11 @@ import { Moon, Sun } from '@styled-icons/fa-solid';
 import React, { useContext } from 'react';
 import Switch from 'react-switch';
 import styled from 'styled-components';
-
 import { ThemeContext } from '../../context/themeContext';
 
-// Colors
+// Es el boton (Switch) que activa y desactiva el modo oscuro
+
+// Colores
 const SWITCH_SUN_COLOR = "#F1C40F"
 const SWITCH_MOON_COLOR = "#000000"
 const SUN_ICON_COLOR = "#FFFFFF";
@@ -29,6 +30,7 @@ const MoonIcon = styled(Moon)`
 
 const ThemeToggler = () => {
   
+  // accedo a las propiedades de contexto  tema
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
 
   return (

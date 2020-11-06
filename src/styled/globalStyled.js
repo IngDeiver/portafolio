@@ -1,4 +1,5 @@
 import {createGlobalStyle} from 'styled-components'
+import {activeLink} from "../styled/components/activeLink";
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -18,6 +19,13 @@ const GlobalStyle = createGlobalStyle`
     p, a {
         font-family: "Roboto Condensed";
         font-weight:300;
+    }
+
+    a.active {
+        &::after{
+            ${activeLink};
+            width:100%;
+        }
     }
 `;
 

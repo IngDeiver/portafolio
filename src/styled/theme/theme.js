@@ -1,3 +1,5 @@
+// Son las varibales asiganadas a los diferentes temas
+
 export  const theme = {
     light:{
         colors:{
