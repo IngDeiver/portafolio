@@ -2,15 +2,15 @@ import React, {useContext}  from "react"
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import { useLocation } from "@reach/router"
-
+import DrawerBtn from './draweBtn'
 
 //Styled buttons
-import ThemeToggler from '../../styled/components/themeTogglerBtn'
-import SocialIcons from '../../styled/components/socialIcons'
-import Nav from '../../styled/components/navContainer'
-import {Links, Linkitem} from '../../styled/components/navLinkElements'
-import DownloadCvBtn from '../../styled/components/downloadCvBtn'
-import { ThemeContext } from '../../context/themeContext';
+import ThemeToggler from '../styled/components/themeTogglerBtn'
+import SocialIcons from './socialIcons'
+import Nav from '../styled/components/navContainer'
+import {Links, Linkitem} from '../styled/components/navLinkElements'
+import DownloadCvBtn from '../styled/components/downloadCvBtn'
+import { ThemeContext } from '../context/themeContext';
 
 
 
@@ -66,10 +66,11 @@ const Header = () => {
 
 
       {/* Buttons rigth */}
-      <div className="d-flex flex-row justify-content-around">
+      <div className="d-flex flex-row justify-content-around ">
           <ThemeToggler/>
           <SocialIcons lg={true}/>
           <DownloadCvBtn download href="/Hoja de vida.docx">Descargar CV</DownloadCvBtn>
+          <DrawerBtn/>
       </div>
 
     </Nav>

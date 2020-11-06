@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import transitionColor from '../transitions/colorTransition'
+import navMediaquery from '../mediaquerys/navMediaquery'
+
 
 // Es el contenedor de la barra de navegación con todos sus estilos
 const navHorizontalPadding = "40px";
@@ -13,4 +15,5 @@ export default styled.nav`
   top: 0;
   width:100vw;
   z-index:1000;
+  ${navMediaquery};
 `;

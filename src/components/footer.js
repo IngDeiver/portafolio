@@ -1,6 +1,6 @@
 import React from "react"
-import SocialIcons from '../../styled/components/socialIcons'
-import {FooterContainer, FooterSignature} from '../../styled/components/footer'
+import SocialIcons from './socialIcons'
+import {FooterContainer, FooterSignature} from '../styled/components/footer'
 
 
 
