@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/proyectos.js"],"names":[],"mappings":"2FAAA,4CAGgB,4BAAO,kBAAC,IAAD","file":"component---src-pages-proyectos-js-f1d62d0560c1c1d99e4b.js","sourcesContent":["import React  from \"react\"\r\nimport Layout from \"../components/layout\"\r\n\r\nexport default  () => (<Layout >Proyectos</Layout>)"],"sourceRoot":""}

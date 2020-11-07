@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/contacto.js"],"names":[],"mappings":"6FAAA,4CAGgB,4BAAO,kBAAC,IAAD","file":"component---src-pages-contacto-js-92fff2e56f1560706cc0.js","sourcesContent":["import React  from \"react\"\r\nimport Layout from \"../components/layout\"\r\n\r\nexport default  () => (<Layout >Contacto</Layout>)"],"sourceRoot":""}
