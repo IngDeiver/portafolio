@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portafolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Este es mi portafolio, creado para dar a conocer mis habilidades como futuro desarrollador e ingeniero de sistemas.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "ingendeiver@gmail.com",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "gatsby": "^2.25.1",

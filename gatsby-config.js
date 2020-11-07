@@ -3,7 +3,7 @@ module.exports = {
     title: `Portafolio Deiver Carrascal`,
     description: `Hola!, soy Deiver, este es mi portafolio, creado para dar a conocer mis habilidades como futuro
     desarrollador e ingeniero de sistemas.`,
-    author: `@gatsbyjs`,
+    author: `@deiver`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
