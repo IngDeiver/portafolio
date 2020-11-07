@@ -27,8 +27,8 @@ export default () => {
             }}
                 alt="Deiver Carrascal"
                 fixed={avatar.file.childImageSharp.fixed} />
-            <TitleAvatar className="title mt-2">Deiver Guerra Carrascal</TitleAvatar>
-            <SubtitleAvatar className="subtitle">Est. Ing. de sistemas</SubtitleAvatar>
+            <TitleAvatar className="title mt-2 text-center">Deiver Guerra Carrascal</TitleAvatar>
+            <SubtitleAvatar className="subtitle text-center">Est. Ing. de sistemas</SubtitleAvatar>
         </div>
     )
 }

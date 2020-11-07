@@ -8,7 +8,10 @@ export default css`
 
 
     @media only screen and (max-width: ${lg}) {
-        ul,  a{
+        ul.show-md{
+            display:none;
+        }
+        a.show-md {
             display:none;
         }
     }

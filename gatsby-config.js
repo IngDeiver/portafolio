@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/portafolio",
   siteMetadata: {
     title: `Portafolio Deiver Carrascal`,
     description: `Hola!, soy Deiver, este es mi portafolio, creado para dar a conocer mis habilidades como futuro
@@ -36,6 +37,7 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ],
 }

@@ -7,7 +7,8 @@ export  const theme = {
             linkItemColor:"#707070",
             iconColor:"#18191A",
             activeColor:"#000000",
-            bodyBgColor:"#FFFFFF"
+            bodyBgColor:"#FFFFFF",
+            backgroundDrawer:"#F5F3FA",
            
         }
     },
@@ -18,7 +19,8 @@ export  const theme = {
             linkItemColor:"#FFFFFF",
             iconColor:"#FFFFFF",
             activeColor:"#ffffff",
-            bodyBgColor:"#18191A"
+            bodyBgColor:"#18191A",
+            backgroundDrawer:"#18191A"
        }
     }
 }
