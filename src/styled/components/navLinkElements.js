@@ -37,6 +37,13 @@ export const Linkitem = styled(Link)`
      ${activeLink};
   }
 
+  &.active {
+        &::after{
+            ${activeLink};
+            width:100%;
+        }
+    }
+
   &:hover{
     &::after{
       width:100%;

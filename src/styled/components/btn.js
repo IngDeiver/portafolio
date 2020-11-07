@@ -2,7 +2,7 @@ import {Link} from 'gatsby'
 import styled from 'styled-components'
 
 
-
+// Es mi component de boton perzonalizado 
 export default styled(Link)`
   background-color: black; /* Green */
   border: none;

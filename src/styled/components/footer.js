@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import colorTransition from '../../styled/transitions/colorTransition'
 
 // Contenedor del footer
-const paddingFooter = "100px"
 export const FooterContainer =  styled.footer`
     margin-top:30px;
 `

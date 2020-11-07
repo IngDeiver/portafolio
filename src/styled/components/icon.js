@@ -9,4 +9,7 @@ export default styled.i`
   transition:${trasintionColor};
   font-size:${props => props.$lg ? "25px ": "20px"};
   margin-left:10px;
+  &:hover{
+    cursor: pointer;
+  }
 `

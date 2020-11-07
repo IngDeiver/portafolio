@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from './seo'
 import Avatar from './avatar'
-import SobreMiTextContainer from '../styled/components/sobremiContainer'
+import SobreMiTextContainer from '../styled/components/pContainer'
 import Btn from '../styled/components/btn'
 import Logo from './logo'
 

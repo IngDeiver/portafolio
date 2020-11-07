@@ -13,7 +13,12 @@ export default styled.nav`
   box-shadow: 1px 0px 7px 2px rgba(0,0,0,0.3);
   position: fixed; 
   top: 0;
-  width:100vw;
+  width:100%;
   z-index:1000;
+  
   ${navMediaquery};
+  
+  div.drawer{
+       height:100em; 
+  }
 `;

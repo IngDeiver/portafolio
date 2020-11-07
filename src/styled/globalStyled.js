@@ -1,5 +1,4 @@
 import {createGlobalStyle} from 'styled-components'
-import {activeLink} from "../styled/components/activeLink";
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -21,12 +20,6 @@ const GlobalStyle = createGlobalStyle`
         font-weight:300;
     }
 
-    a.active {
-        &::after{
-            ${activeLink};
-            width:100%;
-        }
-    }
 `;
 
 export default GlobalStyle

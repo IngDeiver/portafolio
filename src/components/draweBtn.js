@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '../styled/components/icon'
 
-export default () => {
-    return (<Icon onClick={() => console.log("clik")} $lg={true}  className="fas fa-bars ml-3"/>)
+export default ({toogleDrawer, openDrawer}) => {
+    return (<Icon onClick={toogleDrawer} $lg={true}  className={["drawerBtn", openDrawer ? "fas fa-times":"fas fa-bars ml-3"]}/>)
 }

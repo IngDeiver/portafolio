@@ -2,7 +2,8 @@ import {css} from 'styled-components'
 import {xs, sm, md , lg} from './widths'
 
 
-
+/*Son los mediaquerys para cambiar el tamalo de mi logo dependiendo del
+tamaño de la pantalla.*/
 export default css`
 
     // xs

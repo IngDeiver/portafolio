@@ -1,22 +1,20 @@
-import React, {useContext}  from "react"
+import React, {useContext, useState}  from "react"
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import { useLocation } from "@reach/router"
-import DrawerBtn from './draweBtn'
+import DrawerBtn from '../draweBtn'
 
-//Styled buttons
-import ThemeToggler from '../styled/components/themeTogglerBtn'
-import SocialIcons from './socialIcons'
-import Nav from '../styled/components/navContainer'
-import {Links, Linkitem} from '../styled/components/navLinkElements'
-import DownloadCvBtn from '../styled/components/downloadCvBtn'
-import { ThemeContext } from '../context/themeContext';
-
-
+//Styled 
+import ThemeTogglerBtn from '../../styled/components/themeTogglerBtn'
+import SocialIcons from '../socialIcons'
+import Nav from '../../styled/components/navContainer'
+import {Links, Linkitem} from '../../styled/components/navLinkElements'
+import DownloadCvBtn from '../../styled/components/downloadCvBtn'
+import { ThemeContext } from '../../context/themeContext';
+import DrawerContainer from '../../styled/components/drawerContainer'
 
 // lista of sections for nav
-const LinksList = [{to:"/", title:"Sobre mí"}, {to:"/habilidades", title:"Habilidades"},
-                    {to:"/proyectos", title:"Proyectos"}, {to:"/contacto", title:"Contacto"}]
+import LinksList from './linksList'
 
                   
 
@@ -46,7 +44,11 @@ const Header = () => {
     }
   }
 `)
-  
+  const [openDrawer, setOpenDrawer] = useState(false)
+
+  const toogleDrawer = () => {
+    setOpenDrawer(!openDrawer)
+  }
 
   return (
     <Nav className="navbar">
@@ -67,12 +69,15 @@ const Header = () => {
 
       {/* Buttons rigth */}
       <div className="d-flex flex-row justify-content-around ">
-          <ThemeToggler/>
+          <ThemeTogglerBtn/>
           <SocialIcons lg={true}/>
           <DownloadCvBtn download href="/Hoja de vida.docx">Descargar CV</DownloadCvBtn>
-          <DrawerBtn/>
+          <DrawerBtn  toogleDrawer={toogleDrawer} openDrawer={openDrawer}/>
       </div>
 
+      {/* Drawer */}
+      <DrawerContainer className={openDrawer ? "drawer":""}>
+      </DrawerContainer>
     </Nav>
 )
 }
