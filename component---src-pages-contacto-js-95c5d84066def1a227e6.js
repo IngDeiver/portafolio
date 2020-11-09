@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"1zJ4":function(t,e,n){"use strict";n.r(e);var a=n("q1tI"),c=n.n(a),o=n("vrFN"),r=n("Bl7J");e.default=function(){return c.a.createElement(r.a,null,c.a.createElement(o.a,{title:"Contacto"}),"|")}}}]);
-//# sourceMappingURL=component---src-pages-contacto-js-95c5d84066def1a227e6.js.map
