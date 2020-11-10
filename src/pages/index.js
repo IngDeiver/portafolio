@@ -1,7 +1,7 @@
 import React  from "react"
-import Sobremi from '../components/sobremi'
-import Layout from "../components/layout"
+import Sobremi from '../components/sobremi/sobremi'
+import Fade from 'react-reveal/Fade';
 
-export default  () => (<Layout ><Sobremi/></Layout>)
+export default  () => (<Fade><Sobremi/></Fade>)
 
 

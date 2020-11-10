@@ -17,7 +17,7 @@ export default css`
     }
 
     @media only screen and (min-width: ${lg}) {
-        i.drawerBtn{
+        svg.drawerBtn{
             display:none;
         }
     }

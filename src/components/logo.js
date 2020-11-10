@@ -29,8 +29,8 @@ query {
 const { isDarkTheme } = useContext(ThemeContext)
 
     return (
-        <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 
-                        d-flex  justify-content-center mt-md-auto mb-md-auto justify-content-sm-center justify-content-md-end justify-content-lg-end justify-content-xl-end ">
+        <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 
+                        d-flex  justify-content-center mt-md-auto mb-md-auto justify-content-sm-center justify-content-md-center justify-content-lg-end justify-content-xl-end ">
             <Logo className="img-fluid" src={!isDarkTheme ? logoBlack.childImageSharp.fixed.src : logoWhite.childImageSharp.fixed.src}/>
         </div>
     )

@@ -24,14 +24,14 @@ export default css`
     @media only screen and (min-width: ${md})   {
         
         &{
-            width:100%;
+            width:50%;
         }
     }
 
     // >lg
     @media only screen and (min-width: ${lg}) {
         &{
-            width:70%;
+            width:100%;
         }
     }
 

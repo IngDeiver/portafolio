@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import {TitleAvatar, SubtitleAvatar} from '../styled/components/avatarItems'
 import {useStaticQuery, graphql} from 'gatsby'
 
+
 // Es mi foto con nombre y profesion
 export default () => {
     const avatar = useStaticQuery(graphql`
