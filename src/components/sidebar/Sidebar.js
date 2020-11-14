@@ -17,7 +17,7 @@ export default () => {
                         to={section}
                         spy={true}
                         smooth={true}
-                        offset={-90}
+                        offset={-100}
                         duration={300} >{getTitleSection(section)}</Smooth>
                 </div>
             ))}

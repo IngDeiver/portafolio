@@ -11,7 +11,8 @@ export  const theme = {
             backgroundDrawer:"#F5F3FA",
             containerImageColor:"#FFFFFF",
             sidebarLinkItemColor:"#000000",
-            sidebarBgColor:"#F5F5F5"
+            sidebarBgColor:"#F5F5F5",
+            skillDescriptionColor:"#000000"
            
         }
     },
@@ -26,7 +27,8 @@ export  const theme = {
             backgroundDrawer:"#18191A",
             containerImageColor:"#222222",
             sidebarLinkItemColor:"#F5F5F5",
-            sidebarBgColor:"#222222"
+            sidebarBgColor:"#222222",
+            skillDescriptionColor:"#FFFFFF"
        }
     }
 }

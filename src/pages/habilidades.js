@@ -1,5 +1,4 @@
 import React from "react";
-import SEO from '../components/seo'
+import Habilidades from '../components/habilidades'
 
-
-export default () => (<SEO title="Habilidades"/>)
+export default () => (<Habilidades/>)
