@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/habilidades.js"],"names":["title"],"mappings":"2FAAA,4CAIe,4BAAO,kBAAC,IAAD,CAAKA,MAAM","file":"component---src-pages-habilidades-js-89f551222a98baa729f8.js","sourcesContent":["import React from \"react\";\r\nimport SEO from '../components/seo'\r\n\r\n\r\nexport default () => (<SEO title=\"Habilidades\"/>)"],"sourceRoot":""}
