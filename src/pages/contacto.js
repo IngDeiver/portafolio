@@ -1,5 +1,5 @@
-import React from "react";
-import SEO from '../components/seo'
+import React  from "react"
+import Contacto from '../components/contacto'
+import Fade from 'react-reveal/Fade';
 
-
-export default () => (<SEO title="Contacto"/>)
+export default  () => (<Fade><Contacto/></Fade>)

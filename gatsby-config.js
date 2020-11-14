@@ -39,12 +39,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve(`./src/components/layout`),
-      },
-    },
+    `gatsby-plugin-layout`,
     {
       resolve: `gatsby-source-strapi`,
       options: {
