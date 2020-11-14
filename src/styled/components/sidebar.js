@@ -6,7 +6,7 @@ tengo conocimiento quiero, estoy aprendiendo o aprendere en un futuro*/
 const border = "2px"
 export default styled.div`
     position:fixed;
-    margin-top:8%;
+    margin-top:100px;
     
 
     div  a.sidebar-item {

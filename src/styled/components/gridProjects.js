@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import GridMediaquery from '../mediaquerys/gridMediaquery'
 
 export default styled.div`
     display:grid;
@@ -16,4 +17,6 @@ export default styled.div`
     .content {
         grid-area: content;
     }
+
+    ${GridMediaquery};
 `

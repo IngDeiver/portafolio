@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Mediaquery from  '../mediaquerys/overflowMediaquery'
 
 export default styled.div`
     position:absolute;
@@ -10,4 +10,5 @@ export default styled.div`
     color:white;
     bottom:45%;
     transition:all ease .3s;
+    ${Mediaquery};
 `

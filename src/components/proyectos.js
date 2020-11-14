@@ -54,7 +54,7 @@ export default () => {
                                             <ContainerImageProject key={i + 1} className="text-center">
                                                 <ImageProject className="img-fluid" fluid={proyecto.imagen?.childImageSharp?.fluid} />
                                                 <Overflow className="overflow d-flex flex-column justify-content-center">
-                                                    <h4 className="subtitle mx-2">{proyecto.titulo}</h4>
+                                                    <h4 className="subtitle mx-2 my-2">{proyecto.titulo}</h4>
                                                 </Overflow>
                                             </ContainerImageProject>
                                         </Link>
