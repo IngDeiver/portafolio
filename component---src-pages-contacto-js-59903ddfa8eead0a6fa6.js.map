@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/contacto.js"],"names":["title"],"mappings":"6FAAA,4CAIe,4BAAO,kBAAC,IAAD,CAAKA,MAAM","file":"component---src-pages-contacto-js-59903ddfa8eead0a6fa6.js","sourcesContent":["import React from \"react\";\r\nimport SEO from '../components/seo'\r\n\r\n\r\nexport default () => (<SEO title=\"Contacto\"/>)"],"sourceRoot":""}
