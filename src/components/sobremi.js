@@ -24,7 +24,9 @@ export default () => {
             <Avatar />
             <LogoAndTextContainer>
                 <TextContainer>
-                   {data.strapiSobremis?.descripcion}
+                  <p style={{textAlign:"justify"}}>
+                    {data.strapiSobremis?.descripcion}
+                  </p>
                 </TextContainer>
             </LogoAndTextContainer>
             <Fade bottom>

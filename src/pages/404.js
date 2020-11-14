@@ -13,15 +13,17 @@ const NotFoundPage = () => {
     return (
         <>
             <SEO title="404 Not found" />
-            <div style={{marginTop:"30vh"}} className="d-flex flex-column justify-content-center align-items-center">
+            <div className="d-flex flex-column  align-items-center mt-5">
                 <LogoAndTextContainer>
                     <H1 className="title">404</H1>
                     <H2 className="title">Recurso no encontrado</H2>
                     <Pcontainer>
-                        La ruta escrita no es valida, compruebala e itenta nuevamente.
-                        </Pcontainer>
+                        <p>
+                            La ruta escrita no es valida, compruebala e itenta nuevamente.
+                        </p>
+                    </Pcontainer>
                 </LogoAndTextContainer>
-                <div className="d-flex justify-content-center mt-3">
+                <div className="d-flex justify-content-center mt-3 mb-5">
                     <Btn to="/">Volver al inicio</Btn>
                 </div>
             </div>

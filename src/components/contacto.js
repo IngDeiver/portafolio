@@ -5,7 +5,7 @@ import LogoAndTextContainer from './logoAndTextContainer'
 import TextContainer from '../styled/components/pContainer'
 import { graphql, useStaticQuery } from 'gatsby'
 import Pcontainer from '../styled/components/pContactContainer'
-
+import H1 from '../styled/components/h1404TextContainer'
 // Este es el componente donde hablo sobre mí
 export default () => {
 
@@ -27,7 +27,7 @@ export default () => {
             <div className="d-flex justify-content-center">
                 <LogoAndTextContainer>
                     <TextContainer>
-                        <h1 className="title">Comunícate conmingo</h1>
+                        <H1 className="title">Comunícate conmingo</H1>
                         <Pcontainer>{`${data.strapiContactos?.ciudad}, ${data.strapiContactos?.pais}`}</Pcontainer>
                         <Pcontainer>
                             <strong>Tel: </strong> {data.strapiContactos?.telefono}
