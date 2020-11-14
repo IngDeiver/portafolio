@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import transitionColor from '../transitions/colorTransition'
 import navMediaquery from '../mediaquerys/navMediaquery'
-
+import shadow from '../components/shadow'
 
 // Es el contenedor de la barra de navegación con todos sus estilos
 const navHorizontalPadding = "40px";
@@ -10,7 +10,7 @@ export default styled.nav`
   transition:${transitionColor};
   padding-left:${navHorizontalPadding};
   padding-right:${navHorizontalPadding};
-  box-shadow: 1px 0px 7px 2px rgba(0,0,0,0.3);
+  ${shadow};
   position: fixed; 
   top: 0;
   width:100%;

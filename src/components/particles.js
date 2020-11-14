@@ -10,12 +10,12 @@ export default function Particles({ children}) {
         <ReactParticles
           params={particlesConfig}
           style={{
-            position: 'absolute',
             zIndex: 1,
             left: 0,
             right: 0,
             bottom: 0,
-            top: 0
+            top: 0,
+            position:"fixed"
           }}
         />
         {children && <div style={{ position: 'relative' ,zIndex:2}}>{children}</div>}

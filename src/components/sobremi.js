@@ -1,16 +1,22 @@
 import React from "react"
-import SEO from '../seo'
-import Avatar from '../avatar'
-import Btn from '../../styled/components/btn'
+import SEO from './seo'
+import Avatar from './avatar'
+import Btn from '../styled/components/btn'
 import Fade from 'react-reveal/Fade';
-import LogoAndTextContainer from '../logoAndTextContainer'
-import TextContainer from '../../styled/components/pContainer'
-import sobremiDescriptiontText from './sobremiDescriptiontText'
-
+import LogoAndTextContainer from './logoAndTextContainer'
+import TextContainer from '../styled/components/pContainer'
+import { graphql, useStaticQuery } from 'gatsby'
 
 // Este es el componente donde hablo sobre mí
 export default () => {
 
+    const data = useStaticQuery(graphql`
+    query MyQuery {
+        strapiSobremis(id: {eq: "Sobremis_1"}) {
+          descripcion
+        }
+      }
+    `)
 
     return (
         <>
@@ -18,7 +24,7 @@ export default () => {
             <Avatar />
             <LogoAndTextContainer>
                 <TextContainer>
-                   {sobremiDescriptiontText.description}
+                   {data.strapiSobremis?.descripcion}
                 </TextContainer>
             </LogoAndTextContainer>
             <Fade bottom>

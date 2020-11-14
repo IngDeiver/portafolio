@@ -1,7 +1,4 @@
 import React from "react";
-import SEO from '../components/seo'
+import Proyectos from '../components/proyectos'
 
-
-export default () => {
-    return( <SEO title="Proyectos"/>)
-}
+export default () => (<Proyectos/>)

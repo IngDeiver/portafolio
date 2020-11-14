@@ -9,6 +9,9 @@ export  const theme = {
             activeColor:"#000000",
             bodyBgColor:"#FFFFFF",
             backgroundDrawer:"#F5F3FA",
+            containerImageColor:"#FFFFFF",
+            sidebarLinkItemColor:"#000000",
+            sidebarBgColor:"#F5F5F5"
            
         }
     },
@@ -20,7 +23,10 @@ export  const theme = {
             iconColor:"#FFFFFF",
             activeColor:"#ffffff",
             bodyBgColor:"#18191A",
-            backgroundDrawer:"#18191A"
+            backgroundDrawer:"#18191A",
+            containerImageColor:"#222222",
+            sidebarLinkItemColor:"#F5F5F5",
+            sidebarBgColor:"#222222"
        }
     }
 }
