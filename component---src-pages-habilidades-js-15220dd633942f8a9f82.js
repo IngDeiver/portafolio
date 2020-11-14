@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{rTej:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),i=t.n(a),r=t("vrFN");n.default=function(){return i.a.createElement(r.a,{title:"Habilidades"})}}}]);
-//# sourceMappingURL=component---src-pages-habilidades-js-15220dd633942f8a9f82.js.map
