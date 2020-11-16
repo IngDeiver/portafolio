@@ -7,23 +7,26 @@ import Avatar from '../styled/components/avatarContainer'
 // Es mi foto con nombre y profesion
 export default () => {
     const avatar = useStaticQuery(graphql`
-        query {
-            file(relativePath: { eq: "Deiver.jpg" }) {
-            childImageSharp {
-                fluid {
-                ...GatsbyImageSharpFluid
+        query avatar {
+            strapiSobremis(id: {eq: "Sobremis_1"}) {
+                descripcion
+                avatar {
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
                 }
+              }
             }
-            }
-            
         }
-        `)
+    `)
+    console.log(avatar);
 
     return (
         <div className="d-flex flex-column justify-content-center align-items-center mb-2">
             <Avatar
                 alt="Deiver Carrascal"
-                fluid={avatar.file.childImageSharp.fluid} />
+                fluid={avatar.strapiSobremis?.avatar?.childImageSharp?.fluid} />
             <TitleAvatar className="title mt-2 text-center">Deiver Guerra Carrascal</TitleAvatar>
             <SubtitleAvatar className="subtitle text-center">Est. Ing. de sistemas</SubtitleAvatar>
         </div>

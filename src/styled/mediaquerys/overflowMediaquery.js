@@ -1,6 +1,6 @@
 import {css} from 'styled-components'
 import {xs, sm, md , lg} from './widths'
-import {paddingimg} from '../components/containerImageProject'
+import {paddingimg} from '../components/containerProject'
 import {radius} from '../components/imageProject'
 
 

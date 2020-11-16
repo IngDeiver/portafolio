@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from '../styled/components/gridProjects'
 import SEO from './seo'
-import ContainerImageProject from '../styled/components/containerImageProject'
+import ContainerImageProject from '../styled/components/containerProject'
 import { graphql, useStaticQuery } from 'gatsby'
 import ImageProject from '../styled/components/imageProject'
 import Overflow from '../styled/components/overflowProjectImage'
@@ -59,7 +59,7 @@ export default () => {
                                             </ContainerImageProject>
                                         </Link>
                                     )) : (<TextContainer className="text-center my-3">
-                                        Aún no hay proyectos de este tipo, me estoy preparando <span role="img" aria-label="smiles">😅😃</span>
+                                        <p>Aún no hay proyectos de este tipo, me estoy preparando <span role="img" aria-label="smiles">😅😃</span></p>
                                     </TextContainer>)}
                             </section>
                         ))}

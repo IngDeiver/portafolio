@@ -4,9 +4,8 @@ import colorTransition from '../transitions/colorTransition'
 
 // Es mi elemento p para escribir texto
 export default   styled.div`
-  p, h1 {
+  p, h1, h2 {
     color:${(props) => props.theme.colors.activeColor};
     transition:${colorTransition};
-    margin:auto 20px ;
   } 
 `;

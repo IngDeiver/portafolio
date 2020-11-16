@@ -34,7 +34,7 @@ export default () => {
         }
         }
     }`);
-
+    
     return (
         <>
             <SEO title="Proyectos" />
@@ -54,7 +54,9 @@ export default () => {
                                                                     mx-2 my-2 col-8 col-sm-4 col-md-3 col-lg-3 col-xl-3">
                                            <ImageSkill alt={skill.titulo} fluid={skill.imagen?.childImageSharp?.fluid}/>
                                             <TextContainer className="subtitle text-center mx-5 my-3">
-                                                {skill.titulo}
+                                                <p>
+                                                    {skill.titulo}
+                                                </p>
                                             </TextContainer>
                                             <Skilloverflow className="overflow">
                                                 <p className="text-center mx-2 my-2 ">
@@ -63,7 +65,9 @@ export default () => {
                                             </Skilloverflow>
                                        </CardSkill> 
                                     )) : (<TextContainer className="d-flex justify-content-center my-3">
+                                        <p>
                                         Aún no hay proyectos de este tipo, me estoy preparando <span className="ml-2" role="img" aria-label="smiles">😅😃</span>
+                                        </p>
                                     </TextContainer>)}
                                 </div>
                             </section>

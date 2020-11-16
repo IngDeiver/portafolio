@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import transition from '../transitions/colorTransition'
 
+
+// Es e contenedor del listado de proyectos
 export const paddingimg = "20px"
 const margin = "20px"
 export default styled.div`

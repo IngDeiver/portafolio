@@ -68,7 +68,7 @@ const Header = () => {
 
 
       {/* Buttons rigth */}
-      <div className="d-flex flex-row justify-content-around">
+      <div className="d-flex flex-row justify-content-around mt-3">
         <ThemeTogglerBtn />
         <SocialIcons className="show-md" lg={true} />
         <DownloadCvBtn className="show-md" download href="/Hoja de vida.docx">Descargar CV</DownloadCvBtn>
