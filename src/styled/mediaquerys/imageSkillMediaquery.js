@@ -9,14 +9,14 @@ export default css`
     // xs
     @media only screen and (max-width: ${xs}) {
         
-        height:160px;
+        height:150px;
         width:85px;
     }
 
     //sm
     @media only screen and (min-width: ${sm})   {
-        height:160px;
-        width:85px;
+        height:125px;
+        width:80px;
     }
 
     //md

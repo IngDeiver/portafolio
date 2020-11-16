@@ -59,7 +59,7 @@ const Header = () => {
       <Links className="show-md">
         {LinksList.map((link, i) =>
           <li key={i + 1}>
-            <Linkitem className={pathname === link.to || pathname === "/portafolio" + link.to ? "active" : ""} key={i} to={link.to} >
+            <Linkitem className={pathname === link.to || pathname === "/portafolio" + link.to || (pathname.includes("proyectos") && link.to === "/proyectos") ? "active" : ""} key={i} to={link.to} >
               {link.title}
             </Linkitem>
           </li>)
@@ -68,7 +68,7 @@ const Header = () => {
 
 
       {/* Buttons rigth */}
-      <div className="d-flex flex-row justify-content-around mt-3">
+      <div className="d-flex flex-row justify-content-around mt-xl-3 mt-lg-3">
         <ThemeTogglerBtn />
         <SocialIcons className="show-md" lg={true} />
         <DownloadCvBtn className="show-md" download href="/Hoja de vida.docx">Descargar CV</DownloadCvBtn>

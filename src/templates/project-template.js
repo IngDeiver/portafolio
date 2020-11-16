@@ -8,7 +8,6 @@ import TextContainer from '../styled/components/pContainer'
 import SEO from '../components/seo'
 import Tecnologia from '../components/tecnologia'
 import Fade from 'react-reveal/Fade';
-import H1 from '../styled/components/h1404TextContainer'
 import OverflowContainer from '../styled/components/detailProjectOverflowContainer'
 import Logo from '../components/logoOverflowDetailProject'
 import BtnDetailProjectContainer from '../styled/components/btnDetailProjectContainer'
@@ -19,8 +18,9 @@ export default ({ data }) => {
   return (
     <>
       <SEO title={`Proyecto | ${data.strapiProyectos.titulo}`} />
-      <Fade>
-        <ContainerDetailProyect className="d-flex justify-content-center my-5 mx-3 ">
+      <Fade >
+        <br/><br/>
+        <ContainerDetailProyect style={{marginTop:"100px"}} className="d-flex justify-content-center my-5  flex-wrap">
           <div>
             <OverflowContainer>
               <ImageProject fluid={data.strapiProyectos.imagen.childImageSharp.fluid} />
@@ -34,9 +34,9 @@ export default ({ data }) => {
                   </div>
               </DetailProjectOverflow>
             </OverflowContainer>
-            <TextContainer style={{marginLeft:"20px"}} className="my-3">
+            <TextContainer  className="my-3">
               <Fade bottom>
-                <H1 className="title my-3">{data.strapiProyectos.titulo}</H1>
+                <h1 className="title my-3">{data.strapiProyectos.titulo}</h1>
                 <p style={{ textAlign: "justify" }}>{data.strapiProyectos.descripcion}</p>
               </Fade>
               <Fade bottom>
@@ -58,9 +58,9 @@ export default ({ data }) => {
                                           flex-md-row justify-content-md-start
                                           flex-lg-row justify-content-lg-start
                                           flex-xl-row justify-content-xl-start
-                                          d-lg-none .d-xl-block d-xl-none">
+                                          d-lg-none .d-xl-block d-xl-none my-2">
                       {data.strapiProyectos.url && <BtnOption target="_blank" href={data.strapiProyectos.url} rel="noreferrer" className="my-2 mr-4">Visitar</BtnOption>}
-                      {data.strapiProyectos.repositorio && <BtnOption target="_blank" href={data.strapiProyectos.repositorio} rel="noreferrer" className="mr-4">Repositorio</BtnOption>}
+                      {data.strapiProyectos.repositorio && <BtnOption target="_blank" href={data.strapiProyectos.repositorio} rel="noreferrer" className=" my-2 mr-4">Repositorio</BtnOption>}
                       {data.strapiProyectos.video &&  <BtnOption target="_blank" href={data.strapiProyectos.video} rel="noreferrer"className="my-2 mr-4">Video</BtnOption> }
               </BtnDetailProjectContainer>
             </Fade>
