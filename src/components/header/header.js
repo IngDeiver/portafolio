@@ -81,7 +81,7 @@ const Header = () => {
         
         <div className="d-flex flex-column justify-content-center align-items-center mt-5">
           {LinksList.map((link, i) =>
-            <Linkitem onClick={() => toogleDrawer()} className={pathname === link.to || pathname === "/portafolio" + link.to ? "active" : ""} key={i} to={link.to} >
+            <Linkitem onClick={() => toogleDrawer()} className={pathname === link.to || pathname === "/portafolio" + link.to || (pathname.includes("proyectos") && link.to === "/proyectos") ? "active" : ""} key={i} to={link.to} >
               {link.title}
             </Linkitem>)
           }

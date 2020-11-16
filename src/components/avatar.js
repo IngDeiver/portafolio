@@ -20,7 +20,6 @@ export default () => {
             }
         }
     `)
-    console.log(avatar);
 
     return (
         <div className="d-flex flex-column justify-content-center align-items-center mb-2">

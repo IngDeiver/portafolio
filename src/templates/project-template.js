@@ -20,7 +20,7 @@ export default ({ data }) => {
       <SEO title={`Proyecto | ${data.strapiProyectos.titulo}`} />
       <Fade >
         <br/><br/>
-        <ContainerDetailProyect style={{marginTop:"100px"}} className="d-flex justify-content-center my-5  flex-wrap">
+        <ContainerDetailProyect  className="d-flex justify-content-center my-5  flex-wrap container">
           <div>
             <OverflowContainer>
               <ImageProject fluid={data.strapiProyectos.imagen.childImageSharp.fluid} />
