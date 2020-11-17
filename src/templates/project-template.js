@@ -37,14 +37,19 @@ export default ({ data }) => {
             <TextContainer  className="my-3">
               <Fade bottom>
                 <h1 className="title my-3">{data.strapiProyectos.titulo}</h1>
-                <p style={{ textAlign: "justify" }}>{data.strapiProyectos.descripcion}</p>
+                {data.strapiProyectos.descripcion.split(".").map((paragraph, i) => (
+                  <p key={i} className="text-justify my-1">
+                    {`${paragraph}.`}
+                  </p>
+                ))}
+                
               </Fade>
               <Fade bottom>
                 <h2 className="subtitle mt-2">Tecnologias</h2>
                 <div className="d-flex row justify-content-start  mt-3">
                   <div  style={{marginLeft:"5px"}} className="d-flex row justify-content-around">
                   {data.strapiProyectos.tecnologias.map((tec, i) => (
-                   <div key={i+1} className="col">
+                   <div key={i+1} className="mr-1">
                       <Tecnologia key={i} imagen={tec.imagen.childImageSharp.fixed} titulo={tec.titulo} />
                     </div>
                   ))}

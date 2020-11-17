@@ -12,7 +12,9 @@ const Footer = () => (
                         justify-content-sm-around justify-content-md-around justify-content-lg-around
                         justify-content-xl-around  justify-content-around
                         mx-5">
-          <FooterSignature className="text-center" >Deiver Guerra Carrascal &copy; 2020</FooterSignature>
+          <FooterSignature className="text-center" >
+            Deiver Guerra Carrascal &copy; {`${new Date().getFullYear()}`}
+          </FooterSignature>
           <SocialIcons/>
         </div>
   </FooterContainer>

@@ -52,7 +52,7 @@ export default () => {
                                     projects.allStrapiProyectos?.nodes?.filter(p => p.categoria.nombre === section).map((proyecto, i) => (
                                         <Link key={i} to={`/proyectos/${proyecto.slug}`}>
                                             <ContainerImageProject key={i + 1} className="text-center">
-                                                <ImageProject className="img-fluid" fluid={proyecto.imagen?.childImageSharp?.fluid} />
+                                                <ImageProject alt={proyecto.titulo} className="img-fluid" fluid={proyecto.imagen?.childImageSharp?.fluid} />
                                                 <Overflow className="overflow d-flex flex-column justify-content-center">
                                                     <h4 className="subtitle mx-2 my-2">{proyecto.titulo}</h4>
                                                 </Overflow>
