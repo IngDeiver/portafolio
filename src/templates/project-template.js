@@ -47,9 +47,9 @@ export default ({ data }) => {
               <Fade bottom>
                 <h2 className="subtitle mt-2">Tecnologias</h2>
                 <div className="d-flex row justify-content-start  mt-3">
-                  <div  style={{marginLeft:"5px"}} className="d-flex row justify-content-around">
+                  <div  style={{marginLeft:"5px"}} className="d-flex row justify-content-around mx-2">
                   {data.strapiProyectos.tecnologias.map((tec, i) => (
-                   <div key={i+1} className="mr-1">
+                   <div key={i+1} className="mx-1">
                       <Tecnologia key={i} imagen={tec.imagen.childImageSharp.fixed} titulo={tec.titulo} />
                     </div>
                   ))}

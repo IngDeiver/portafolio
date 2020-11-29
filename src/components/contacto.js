@@ -6,7 +6,7 @@ import TextContainer from '../styled/components/pContainer'
 import { graphql, useStaticQuery } from 'gatsby'
 import Pcontainer from '../styled/components/pContactContainer'
 import H1 from '../styled/components/h1404TextContainer'
-import BtnWhatsApp from '../styled/components/whatsAppBtn'
+import Btn from '../styled/components/btn'
 import { Whatsapp} from '@styled-icons/fa-brands';
 import IconStyle from '../styled/components/icon'
 import styled from 'styled-components'
@@ -43,11 +43,13 @@ export default () => {
                         <Pcontainer>
                             <strong>Email: </strong> {data.strapiContactos?.email}
                         </Pcontainer>
-                        <BtnWhatsApp className="mt-3" target="_blank" 
-                                     href={`https://wa.me/${data.strapiContactos?.telefono}`}  
-                                     rel="noreferrer">
-                        <WhatsappIcon/> Escribeme
-                        </BtnWhatsApp>
+                        <div className="d-flex justify-content-center justify-content-lg-start mt-3 ">
+                            <Btn className="ml-lg-2"  target="_blank" 
+                                        href={`https://wa.me/${data.strapiContactos?.telefono}`}  
+                                        rel="noreferrer">
+                                <WhatsappIcon/> Escribeme
+                            </Btn>
+                        </div>
                     </TextContainer>
                 </LogoAndTextContainer>
             </div>
