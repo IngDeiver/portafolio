@@ -21,7 +21,7 @@ export default () => {
         nodes{
             titulo
             descripcion
-            categoria{
+            categorias{
                 nombre
               }
             imagen {
@@ -34,25 +34,25 @@ export default () => {
         }
         }
     }`);
-    
+
+    console.log(skills);
     return (
         <>
             <SEO title="Proyectos" />
             <Grid>
-                <Sidebar />
+                <Sidebar haveMain />
                 <Fade>
-                    <div style={{ marginTop: "90px" }} className="content">
-                        {sections.map((section, i) => (
-                            <section key={i} id={section}>
-                                <div className={`d-flex justify-content-center ${section !== "web"  ? "mt-3" : ""}`}>
-                                    <SectionTitle>{getTitleSection(section)}</SectionTitle>
-                                </div>
-                                <div className="row mt-3 justify-content-center">
-                                    {skills.allStrapiTecnologias?.nodes?.filter(s => s.categoria.nombre === section).length !== 0 ?
-                                    skills.allStrapiTecnologias?.nodes?.filter(s => s.categoria.nombre === section).map((skill, i) => (
-                                       <CardSkill key={i} className="d-flex flex-column align-items-center justify-content-center 
+                    <div style={{ marginTop: "80px" }} className="content">
+                        <section id="main" >
+                            <div className={`d-flex justify-content-center mt-3`}>
+                                <SectionTitle>Tecnologías principales</SectionTitle>
+                            </div>
+                            <div className="row mt-3 justify-content-center">
+                                {
+                                    skills.allStrapiTecnologias?.nodes?.filter(s => s.categorias.map(c => c.nombre).includes("main")).map((skill, i) => (
+                                        <CardSkill key={i} className="d-flex flex-column align-items-center justify-content-center 
                                                                     mx-2 my-2 col-8 col-sm-5 col-md-3 col-lg-3 col-xl-3">
-                                           <ImageSkill alt={skill.titulo} fluid={skill.imagen?.childImageSharp?.fluid}/>
+                                            <ImageSkill alt={skill.titulo} fluid={skill.imagen?.childImageSharp?.fluid} />
                                             <TextContainer className="subtitle text-center mx-5 my-3">
                                                 <p>
                                                     {skill.titulo}
@@ -63,10 +63,36 @@ export default () => {
                                                     {skill.descripcion}
                                                 </p>
                                             </Skilloverflow>
-                                       </CardSkill> 
-                                    )) : (<TextContainer className="text-center my-3">
-                                    <p>Aún no hay proyectos de este tipo, me estoy preparando <span role="img" aria-label="smiles">😅😃</span></p>
-                                </TextContainer>)}
+                                        </CardSkill>
+                                    ))
+                                }
+                            </div>
+                        </section>
+                        {sections.map((section, i) => (
+                            <section key={i} id={section}>
+                                <div className={`d-flex justify-content-center mt-3`}>
+                                    <SectionTitle>{getTitleSection(section)}</SectionTitle>
+                                </div>
+                                <div className="row mt-3 justify-content-center">
+                                    {skills.allStrapiTecnologias?.nodes?.filter(s => s.categorias.map(c => c.nombre).includes(section)).length !== 0 ?
+                                        skills.allStrapiTecnologias?.nodes?.filter(s => s.categorias.map(c => c.nombre).includes(section)).map((skill, i) => (
+                                            <CardSkill key={i} className="d-flex flex-column align-items-center justify-content-center 
+                                                                    mx-2 my-2 col-8 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+                                                <ImageSkill alt={skill.titulo} fluid={skill.imagen?.childImageSharp?.fluid} />
+                                                <TextContainer className="subtitle text-center mx-5 my-3">
+                                                    <p>
+                                                        {skill.titulo}
+                                                    </p>
+                                                </TextContainer>
+                                                <Skilloverflow className="overflow">
+                                                    <p className="text-center mx-2 my-2 ">
+                                                        {skill.descripcion}
+                                                    </p>
+                                                </Skilloverflow>
+                                            </CardSkill>
+                                        )) : (<TextContainer className="text-center my-3">
+                                            <p>Aún no hay proyectos de este tipo, me estoy preparando <span role="img" aria-label="smiles">😅😃</span></p>
+                                        </TextContainer>)}
                                 </div>
                             </section>
                         ))}
