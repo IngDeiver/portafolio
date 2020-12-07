@@ -9,19 +9,18 @@ import SectionTitle from '../styled/components/sectionTitle'
 import TextContainer from '../styled/components/pContainer'
 import CardSkill from '../styled/components/cardSkillContainer'
 import ImageSkill from '../styled/components/imageSkill'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import Skilloverflow from '../styled/components/skillOverflow'
 
 
-export default () => {
-
-    const skills = useStaticQuery(graphql`
+export default () => (<StaticQuery
+    query={graphql`
     query {
         allStrapiTecnologias{
-        nodes{
+        nodes {
             titulo
             descripcion
-            categorias{
+            categorias {
                 nombre
               }
             imagen {
@@ -33,14 +32,13 @@ export default () => {
             }
         }
         }
-    }`);
-
-    console.log(skills);
-    return (
+    }`}
+    
+    render={skills => (
         <>
             <SEO title="Proyectos" />
             <Grid>
-                <Sidebar haveMain />
+                <Sidebar haveMain={true} />
                 <Fade>
                     <div style={{ marginTop: "80px" }} className="content">
                         <section id="main" >
@@ -100,5 +98,4 @@ export default () => {
                 </Fade>
             </Grid>
         </>
-    )
-}
+    )}/>)
