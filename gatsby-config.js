@@ -47,10 +47,6 @@ module.exports = {
         queryLimit: 1000, // Default to 100
         contentTypes: [`contactos`, `sobremis`, `categorias`, `proyectos`, `tecnologias`]
       },
-      loginData: {
-        identifier: "ingendeiver@gmail.com",
-        password: "DEIBERandres1",
-      }
     },
   ],
 }

@@ -22,7 +22,7 @@ export default () => {
 
     const data = useStaticQuery(graphql`
     query {
-        strapiContactos(id: {eq: "Contactos_1"}) {
+        strapiContactos(id: {eq: "Contactos_6001eaccd06b8f54e53d0bec"}) {
           telefono
           email
           pais

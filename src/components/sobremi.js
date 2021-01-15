@@ -12,7 +12,7 @@ export default () => {
 
     const data = useStaticQuery(graphql`
     query MyQuery {
-        strapiSobremis(id: {eq: "Sobremis_1"}) {
+        strapiSobremis(id: {eq: "Sobremis_6001e9fdd06b8f54e53d0be6"}) {
           descripcion
         }
       }

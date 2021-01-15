@@ -8,8 +8,7 @@ import Avatar from '../styled/components/avatarContainer'
 export default () => {
     const avatar = useStaticQuery(graphql`
         query avatar {
-            strapiSobremis(id: {eq: "Sobremis_1"}) {
-                descripcion
+            strapiSobremis(id: {eq: "Sobremis_6001e9fdd06b8f54e53d0be6"}) {
                 avatar {
                 childImageSharp {
                     fluid {
