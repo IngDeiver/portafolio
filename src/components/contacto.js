@@ -40,10 +40,13 @@ export default () => {
                     <TextContainer>
                         <H1 className="title">Comunícate conmingo</H1>
                         <Pcontainer>{`${data.strapiContactos?.ciudad}, ${data.strapiContactos?.pais}`}</Pcontainer>
-                        <Pcontainer>
-                            <strong>Email: </strong> {data.strapiContactos?.email}
-                        </Pcontainer>
-                        <div className="d-flex justify-content-center justify-content-lg-start mt-3 ">
+                        <div className="d-flex justify-content-center justify-content-lg-start mt-2">
+                            <Btn className="ml-lg-2" href={`mailto:${data.strapiContactos?.email}`}>
+                                    <span className="d-none d-sm-block">Envíame un correo</span>
+                                    <span className="d-block d-sm-none">Correo</span>
+                            </Btn>
+                        </div>
+                        <div className="d-flex justify-content-center justify-content-lg-start mt-2 ">
                             <Btn className="ml-lg-2"  target="_blank" 
                                         href={`https://wa.me/${data.strapiContactos?.telefono}`}  
                                         rel="noreferrer">
