@@ -71,7 +71,7 @@ const Header = () => {
       <div className="d-flex flex-row justify-content-around mt-xl-3 mt-lg-3">
         <ThemeTogglerBtn />
         <SocialIcons className="show-md" lg={true} />
-        <DownloadCvBtn className="show-md" download href="/portafolio/Hoja de vida.pdf">Descargar CV</DownloadCvBtn>
+        <DownloadCvBtn className="show-md" download href="/cv-ingdeiver.pdf">Descargar CV</DownloadCvBtn>
         <DrawerBtn toogleDrawer={toogleDrawer} openDrawer={openDrawer} />
 
       </div>
@@ -90,7 +90,7 @@ const Header = () => {
         <div className="row d-flex  justify-content-center my-3">
           <div className="d-flex flex-row justify-content-around">
             <SocialIcons lg={true} />
-            <DownloadCvBtn download href="/Hoja de vida.pdf">Descargar CV</DownloadCvBtn>
+            <DownloadCvBtn download href="/cv-ingdeiver.pdf">Descargar CV</DownloadCvBtn>
           </div>
         </div>
       </DrawerContainer>
