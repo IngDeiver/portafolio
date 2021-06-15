@@ -26,7 +26,7 @@ export default () => {
                 alt="Deiver Carrascal"
                 fluid={avatar.strapiSobremis?.avatar?.childImageSharp?.fluid} />
             <TitleAvatar className="title mt-2 text-center">Deiver Guerra Carrascal</TitleAvatar>
-            <SubtitleAvatar className="subtitle text-center">Est. Ing. de sistemas</SubtitleAvatar>
+            <SubtitleAvatar className="subtitle text-center">Ing. de sistemas e informática</SubtitleAvatar>
         </div>
     )
 }
