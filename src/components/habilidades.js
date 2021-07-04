@@ -38,7 +38,7 @@ export default () => (<StaticQuery
         <>
             <SEO title="Proyectos" />
             <Grid>
-                <Sidebar haveMain={true} />
+                <Sidebar haveMain haveSecundary />
                 <Fade>
                     <div style={{ marginTop: "80px" }} className="content">
                         <section id="main" >
@@ -48,6 +48,31 @@ export default () => (<StaticQuery
                             <div className="row mt-3 justify-content-center">
                                 {
                                     skills.allStrapiTecnologias?.nodes?.filter(s => s.categorias.map(c => c.nombre).includes("main")).map((skill, i) => (
+                                        <CardSkill key={i} className="d-flex flex-column align-items-center justify-content-center 
+                                                                    mx-2 my-2 col-8 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+                                            <ImageSkill alt={skill.titulo} fluid={skill.imagen?.childImageSharp?.fluid} />
+                                            <TextContainer className="subtitle text-center mx-5 my-3">
+                                                <p>
+                                                    {skill.titulo}
+                                                </p>
+                                            </TextContainer>
+                                            <Skilloverflow className="overflow">
+                                                <p className="text-center mx-2 my-2 ">
+                                                    {skill.descripcion}
+                                                </p>
+                                            </Skilloverflow>
+                                        </CardSkill>
+                                    ))
+                                }
+                            </div>
+                        </section>
+                        <section id="secondary" >
+                            <div className={`d-flex justify-content-center mt-3`}>
+                                <SectionTitle>Tecnologías secundarias</SectionTitle>
+                            </div>
+                            <div className="row mt-3 justify-content-center">
+                                {
+                                    skills.allStrapiTecnologias?.nodes?.filter(s => s.categorias.map(c => c.nombre).includes("secondary")).map((skill, i) => (
                                         <CardSkill key={i} className="d-flex flex-column align-items-center justify-content-center 
                                                                     mx-2 my-2 col-8 col-sm-5 col-md-3 col-lg-3 col-xl-3">
                                             <ImageSkill alt={skill.titulo} fluid={skill.imagen?.childImageSharp?.fluid} />

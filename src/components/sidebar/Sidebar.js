@@ -5,7 +5,7 @@ import sections from './sections'
 import getTitleSection from './getTitleSection'
 
 
-export default ({ haveMain }) => {
+export default ({ haveMain, haveSecundary }) => {
 
     return (
         <Sidebar className="sidebar">
@@ -20,6 +20,19 @@ export default ({ haveMain }) => {
                         offset={-100}
                         duration={300} >
                         Principales
+                    </Smooth>
+                </div>}
+                {haveSecundary &&
+                <div className="mt-2" key="main">
+                    <Smooth
+                        className="sidebar-item"
+                        activeClass="active"
+                        to={"secondary"}
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={300} >
+                        Secundarias
                     </Smooth>
                 </div>}
             {sections.map((section, i) => (
