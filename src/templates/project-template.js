@@ -28,9 +28,12 @@ export default ({ data }) => {
                   <Logo/>
                   {/* Botones */}
                   <div className="d-flex flex-column mr-5">
-                    {data.strapiProyectos.url && <BtnOption target="_blank" href={data.strapiProyectos.url} rel="noreferrer" className="my-2">Visitar</BtnOption>}
-                    {data.strapiProyectos.repositorio && <BtnOption target="_blank" href={data.strapiProyectos.repositorio} rel="noreferrer" className="my-2">Repositorio</BtnOption>}
-                    {data.strapiProyectos.video &&  <BtnOption target="_blank" href={data.strapiProyectos.video} rel="noreferrer"className="my-2">Video</BtnOption> }
+                    {data.strapiProyectos.url ? <BtnOption target="_blank" href={data.strapiProyectos.url} rel="noreferrer" className="my-2">Visitar</BtnOption> :
+                      <BtnOption className="my-2 mr-4" >Muestra no disponible</BtnOption>}
+                    {data.strapiProyectos.repositorio ? <BtnOption target="_blank" href={data.strapiProyectos.repositorio} rel="noreferrer" className="my-2">Repositorio</BtnOption> :
+                    <BtnOption className="my-2">Repositorio no disponible</BtnOption>}
+                    {data.strapiProyectos.video ?  <BtnOption target="_blank" href={data.strapiProyectos.video} rel="noreferrer"className="my-2">Video</BtnOption> : 
+                      <BtnOption  className="my-2">Video no disponible</BtnOption>}
                   </div>
               </DetailProjectOverflow>
             </OverflowContainer>
@@ -64,9 +67,12 @@ export default ({ data }) => {
                                           flex-lg-row justify-content-lg-start
                                           flex-xl-row justify-content-xl-start
                                           d-lg-none .d-xl-block d-xl-none my-2">
-                      {data.strapiProyectos.url && <BtnOption target="_blank" href={data.strapiProyectos.url} rel="noreferrer" className="my-2 mr-4">Visitar</BtnOption>}
-                      {data.strapiProyectos.repositorio && <BtnOption target="_blank" href={data.strapiProyectos.repositorio} rel="noreferrer" className=" my-2 mr-4">Repositorio</BtnOption>}
-                      {data.strapiProyectos.video &&  <BtnOption target="_blank" href={data.strapiProyectos.video} rel="noreferrer"className="my-2 mr-4">Video</BtnOption> }
+                      {data.strapiProyectos.url ? <BtnOption target="_blank" href={data.strapiProyectos.url} rel="noreferrer" className="my-2 mr-4">Visitar</BtnOption> :
+                      <BtnOption className="my-2 mr-4">Muestra no disponible</BtnOption>}
+                      {data.strapiProyectos.repositorio ? <BtnOption target="_blank" href={data.strapiProyectos.repositorio} rel="noreferrer" className=" my-2 mr-4">Repositorio</BtnOption> :
+                    <BtnOption className="my-2">Repositorio no disponible</BtnOption>}
+                      {data.strapiProyectos.video ? <BtnOption target="_blank" href={data.strapiProyectos.video} rel="noreferrer"className="my-2 mr-4">Video</BtnOption> : 
+                      <BtnOption  className="my-2">Video no disponible</BtnOption> }
               </BtnDetailProjectContainer>
             </Fade>
           </div>
