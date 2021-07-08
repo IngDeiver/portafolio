@@ -45,7 +45,7 @@ export default ({ data }) => {
                 
               </Fade>
               <Fade bottom>
-                <h2 className="subtitle mt-2">Tecnologias</h2>
+                <h2 className="subtitle mt-2">Tecnologías</h2>
                 <div className="d-flex row justify-content-start  mt-3">
                   <div  style={{marginLeft:"5px"}} className="d-flex row justify-content-around mx-2">
                   {data.strapiProyectos.tecnologias.map((tec, i) => (

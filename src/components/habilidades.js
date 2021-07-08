@@ -12,7 +12,6 @@ import ImageSkill from '../styled/components/imageSkill'
 import { graphql, StaticQuery } from 'gatsby'
 import Skilloverflow from '../styled/components/skillOverflow'
 
-
 export default () => (<StaticQuery
     query={graphql`
     query {
@@ -45,6 +44,12 @@ export default () => (<StaticQuery
                             <div className={`d-flex justify-content-center mt-3`}>
                                 <SectionTitle>Tecnologías principales</SectionTitle>
                             </div>
+                            <TextContainer className="text-center mx-5">
+                                   <p> 
+                                       En esta sección están las habilidades técnicas que uso comunmente para implementar
+                                       soluciones y sobre las cuales tengo mayor conocimiento y experiencia.
+                                   </p>
+                            </TextContainer>
                             <div className="row mt-3 justify-content-center">
                                 {
                                     skills.allStrapiTecnologias?.nodes?.filter(s => s.categorias.map(c => c.nombre).includes("main")).map((skill, i) => (
@@ -70,6 +75,13 @@ export default () => (<StaticQuery
                             <div className={`d-flex justify-content-center mt-3`}>
                                 <SectionTitle>Tecnologías secundarias</SectionTitle>
                             </div>
+                            <TextContainer className="text-center mx-5">
+                                   <p> 
+                                       En esta sección están las habilidades técnicas secundarias que uso con menos frecuencia y 
+                                       no domino como las principales, con las cuales podría implementar soluciones en caso de necesitarlas y extender mi conocimiento
+                                       sobre ellas. 
+                                   </p>
+                            </TextContainer>
                             <div className="row mt-3 justify-content-center">
                                 {
                                     skills.allStrapiTecnologias?.nodes?.filter(s => s.categorias.map(c => c.nombre).includes("secondary")).map((skill, i) => (

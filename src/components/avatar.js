@@ -8,6 +8,8 @@ const options = {
   strings: ["JavaScript developer",
   "Backend developer",
   "Frontend developer",
+  "Responsable",
+  "Comprometido",
   "Autodidacta",
   "Ing. de sistemas e informática"],
   typeSpeed: 50,

@@ -1,1 +1,3 @@
-export default ["web", "movíl", "Cloud", "DevOps"]
+export default ["web", "movíl", 
+//"Cloud", "DevOps"
+]
