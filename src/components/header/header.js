@@ -15,6 +15,7 @@ import DrawerContainer from '../../styled/components/drawerContainer'
 
 // lista of sections for nav
 import LinksList from './linksList'
+import { Link } from "gatsby"
 
 
 
@@ -53,7 +54,9 @@ const Header = () => {
   return (
     <Nav className="navbar">
       {/* Logo */}
-      <Img style={{ width: "70px" }} fluid={isDarkTheme ? whiteLogo.childImageSharp.fluid : blackLogo.childImageSharp.fluid} alt="Logo"></Img>
+      <Link to="/">
+        <Img style={{ width: "70px" }} fluid={isDarkTheme ? whiteLogo.childImageSharp.fluid : blackLogo.childImageSharp.fluid} alt="Logo"></Img>
+      </Link>
 
       {/* Links of nav */}
       <Links className="show-md">

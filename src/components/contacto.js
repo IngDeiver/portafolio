@@ -38,7 +38,7 @@ export default () => {
             <div className="d-flex justify-content-center">
                 <LogoAndTextContainer>
                     <TextContainer>
-                        <H1 className="title">Comunícate conmingo</H1>
+                        <H1 className="title">Comunícate conmigo</H1>
                         <Pcontainer>{`${data.strapiContactos?.ciudad}, ${data.strapiContactos?.pais}`}</Pcontainer>
                         <div className="d-flex justify-content-center justify-content-lg-start mt-2">
                             <Btn className="ml-lg-2" href={`mailto:${data.strapiContactos?.email}`}>
